@@ -21951,7 +21951,7 @@ const k5 = ({
             d.src = E5
         }, []);
         const l = () => {
-                n === "idle" && (r("playing"), t == null || t(), o.current && o.current.play())
+                n === "idle" && (r("playing"), t == null || t(), o.current && (o.current.muted = !1, o.current.volume = 1, o.current.play()))
             },
             c = () => {
                 o.current && o.current.duration - o.current.currentTime <= 4 && !s && i(!0)
@@ -22042,7 +22042,7 @@ const k5 = ({
                 onEnded: u,
                 onTimeUpdate: c,
                 playsInline: !0,
-                muted: !0,
+                muted: !1,
                 preload: "auto"
             }), !1 && f.jsx(W.div, {
                 className: "absolute inset-0 flex items-center justify-center",
@@ -32491,7 +32491,7 @@ const FV = () => {
             children: [f.jsx($V, {}), f.jsx(MV, {
                 startPlaying: e
             }), f.jsx(k5, {
-                onFirstClick: n
+                onComplete: n
             }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(M5, {}), f.jsx($5, {}), f.jsx(V5, {}), f.jsx(U5, {}), f.jsx(DV, {}), f.jsx(LV, {})]
         })
     },
