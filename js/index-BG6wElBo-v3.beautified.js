@@ -22694,6 +22694,79 @@ const k5 = ({
             })]
         })
     },
+    LocationQuoteSection = () => f.jsx("section", {
+        id: "location-quote",
+        className: "flex items-center justify-center px-8 py-20",
+        style: {
+            backgroundColor: "#FAF8F5",
+            minHeight: "70vh"
+        },
+        children: f.jsxs(W.div, {
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .8,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "flex flex-col items-center text-center max-w-2xl",
+            children: [f.jsxs("svg", {
+                width: "112",
+                height: "72",
+                viewBox: "0 0 112 72",
+                fill: "none",
+                stroke: "#5C2018",
+                strokeWidth: "2.2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                className: "mb-10",
+                "aria-hidden": !0,
+                children: [f.jsx("ellipse", {
+                    cx: "43",
+                    cy: "32",
+                    rx: "26",
+                    ry: "16",
+                    transform: "rotate(-18 43 32)"
+                }), f.jsx("ellipse", {
+                    cx: "70",
+                    cy: "40",
+                    rx: "28",
+                    ry: "17",
+                    transform: "rotate(18 70 40)"
+                }), f.jsx("ellipse", {
+                    cx: "43",
+                    cy: "32",
+                    rx: "21",
+                    ry: "12",
+                    transform: "rotate(-18 43 32)",
+                    opacity: ".55"
+                }), f.jsx("ellipse", {
+                    cx: "70",
+                    cy: "40",
+                    rx: "23",
+                    ry: "13",
+                    transform: "rotate(18 70 40)",
+                    opacity: ".55"
+                })]
+            }), f.jsx("p", {
+                className: "text-2xl md:text-3xl font-semibold",
+                style: {
+                    color: "#3D2A20",
+                    fontFamily: "'Courier New', Courier, monospace",
+                    lineHeight: 1.65
+                },
+                children: "This is not the start of something new, but the continuation of something true."
+            })]
+        })
+    }),
     lw = e => {
         const t = e.getTime() - new Date().getTime();
         return t <= 0 ? {
@@ -32590,7 +32663,7 @@ const FV = () => {
                 startPlaying: e
             }), f.jsx(k5, {
                 onComplete: n
-            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(M5, {}), f.jsx($5, {}), f.jsx(V5, {}), f.jsx(U5, {}), f.jsx(DV, {}), f.jsx(LV, {})]
+            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(LocationQuoteSection, {}), f.jsx(M5, {}), f.jsx($5, {}), f.jsx(V5, {}), f.jsx(U5, {}), f.jsx(DV, {}), f.jsx(LV, {})]
         })
     },
     mh = "admin_session_token";
