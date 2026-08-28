@@ -21959,6 +21959,7 @@ const k5 = ({
             u = () => {
                 o.current && o.current.pause(), r("done"), e == null || e()
             };
+        if (n === "done") return null;
         return f.jsxs("section", {
             className: "relative h-screen w-full cursor-pointer overflow-hidden",
             onClick: l,
