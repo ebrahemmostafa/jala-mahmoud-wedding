@@ -21969,7 +21969,7 @@ const k5 = ({
                     alt: "",
                     className: "hidden"
                 }), f.jsxs(W.div, {
-                    className: "absolute inset-x-0 bottom-8 z-10 flex flex-col items-center justify-center",
+                    className: "absolute inset-0 z-10 flex flex-col items-center justify-center",
                     initial: {
                         opacity: 0
                     },
