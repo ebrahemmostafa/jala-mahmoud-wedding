@@ -22629,7 +22629,7 @@ const k5 = ({
                     style: {
                         color: "#5C2018"
                     },
-                    children: "War Factory Club – First El Tayaran Street – Salah Salem – Nasr City."
+                    children: "War Factory Club – Salah Salem – Next to Air Force House - Nasr City."
                 }), f.jsx("a", {
                     href: "https://maps.app.goo.gl/k3E5FLAJQP7pVmHaA",
                     target: "_blank",
