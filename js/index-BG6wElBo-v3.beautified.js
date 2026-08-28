@@ -22604,7 +22604,7 @@ const k5 = ({
                     style: {
                         color: "#5C2018"
                     },
-                    children: "Villa Medicea di Artimino"
+                    children: "Analia Hall"
                 })
             }), f.jsxs(W.div, {
                 initial: {
@@ -22625,17 +22625,21 @@ const k5 = ({
                 },
                 className: "text-center mb-8",
                 children: [f.jsx("p", {
-                    className: "font-body text-xs tracking-[0.2em] uppercase",
+                    className: "font-body text-sm md:text-base tracking-[0.08em] uppercase leading-relaxed max-w-xl",
                     style: {
                         color: "#5C2018"
                     },
-                    children: "Via di Papa Leone X, 28"
-                }), f.jsx("p", {
-                    className: "font-body text-xs tracking-[0.2em] uppercase",
+                    children: "War Factory Club – First El Tayaran Street – Salah Salem – Nasr City."
+                }), f.jsx("a", {
+                    href: "https://maps.app.goo.gl/k3E5FLAJQP7pVmHaA",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "inline-flex items-center justify-center mt-5 px-6 py-3 rounded-full font-body text-xs tracking-[0.12em] uppercase transition-transform duration-300 hover:scale-105",
                     style: {
-                        color: "#5C2018"
+                        backgroundColor: "#5C2018",
+                        color: "#FAF8F5"
                     },
-                    children: "Artimino, Florencia"
+                    children: "View on Google Maps"
                 })]
             }), f.jsx(W.div, {
                 initial: {
