@@ -22819,7 +22819,7 @@ const k5 = ({
                     color: "#5C2018"
                 },
                 children: r("countdown.forTheBigDay")
-            }), f.jsx(W.p, {
+            }), f.jsxs(W.div, {
                 initial: {
                     opacity: 0,
                     y: 16
@@ -22835,11 +22835,42 @@ const k5 = ({
                 viewport: {
                     once: !0
                 },
-                className: "font-body text-base md:text-lg leading-relaxed text-center max-w-2xl mt-8 px-2",
+                className: "flex flex-col items-center text-center max-w-2xl mt-10 px-2",
                 style: {
                     color: "#5C2018"
                 },
-                children: "We warmly invite you to celebrate our katb ketab day with us in the beautiful town of cairo, Nasr city. We look forward to sharing this unforgettable moment with our most special people."
+                children: [f.jsx("h3", {
+                    className: "font-script text-4xl md:text-5xl mb-5",
+                    children: "Dear Guests,"
+                }), f.jsxs("div", {
+                    className: "relative w-20 h-10 mb-7",
+                    "aria-hidden": !0,
+                    children: [f.jsx("span", {
+                        className: "absolute w-9 h-9 rounded-full border-2",
+                        style: {
+                            left: "13px",
+                            top: "2px",
+                            borderColor: "#C9A46A",
+                            transform: "rotate(-8deg)",
+                            boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.65), 0 2px 5px rgba(92,32,24,0.16)"
+                        }
+                    }), f.jsx("span", {
+                        className: "absolute w-9 h-9 rounded-full border-2",
+                        style: {
+                            right: "13px",
+                            top: "2px",
+                            borderColor: "#C9A46A",
+                            transform: "rotate(8deg)",
+                            boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.65), 0 2px 5px rgba(92,32,24,0.16)"
+                        }
+                    })]
+                }), f.jsx("p", {
+                    className: "font-body text-base md:text-lg leading-relaxed mb-5",
+                    children: "Something wonderful is about to happen, and we would love to share this special day with our family and dearest friends."
+                }), f.jsx("p", {
+                    className: "font-body text-base md:text-lg leading-relaxed",
+                    children: "Join us as we celebrate the beginning of our forever."
+                })]
             })]
         })
     },
