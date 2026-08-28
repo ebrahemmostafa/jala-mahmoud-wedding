@@ -1,0 +1,30 @@
+.site-background {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+    background-color: #ead1a5;
+}
+
+.site-background::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(250, 244, 232, 0.24), rgba(250, 244, 232, 0.24)),
+        url("../assets/images/wedding-site-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.site-background > section {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(250, 248, 245, 0.48) !important;
+}
+
+.site-background > section:first-of-type {
+    background-color: transparent !important;
+}

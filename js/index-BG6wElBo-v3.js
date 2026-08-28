@@ -32454,7 +32454,7 @@ const FV = () => {
             t(!0)
         };
         return f.jsxs("main", {
-            className: "bg-white",
+            className: "site-background",
             children: [f.jsx($V, {}), f.jsx(MV, {
                 startPlaying: e
             }), f.jsx(k5, {
