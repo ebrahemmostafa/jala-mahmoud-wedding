@@ -22819,6 +22819,27 @@ const k5 = ({
                     color: "#5C2018"
                 },
                 children: r("countdown.forTheBigDay")
+            }), f.jsx(W.p, {
+                initial: {
+                    opacity: 0,
+                    y: 16
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: .7,
+                    delay: .75
+                },
+                viewport: {
+                    once: !0
+                },
+                className: "font-body text-base md:text-lg leading-relaxed text-center max-w-2xl mt-8 px-2",
+                style: {
+                    color: "#5C2018"
+                },
+                children: "We warmly invite you to celebrate our katb ketab day with us in the beautiful town of cairo, Nasr city. We look forward to sharing this unforgettable moment with our most special people."
             })]
         })
     },
