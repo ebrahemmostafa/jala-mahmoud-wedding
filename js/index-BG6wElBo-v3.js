@@ -22823,6 +22823,27 @@ const k5 = ({
                     color: "#5C2018"
                 },
                 children: r("countdown.forTheBigDay")
+            }), f.jsx(W.h3, {
+                initial: {
+                    opacity: 0,
+                    y: 12
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: .7,
+                    delay: .68
+                },
+                viewport: {
+                    once: !0
+                },
+                className: "font-script text-4xl md:text-5xl mt-10 mb-5",
+                style: {
+                    color: "#5C2018"
+                },
+                children: "Welcome"
             }), f.jsx(W.p, {
                 initial: {
                     opacity: 0,
@@ -22839,7 +22860,7 @@ const k5 = ({
                 viewport: {
                     once: !0
                 },
-                className: "font-body text-base md:text-lg leading-relaxed text-center max-w-2xl mt-8 px-2",
+                className: "font-body text-base md:text-lg leading-relaxed text-center max-w-2xl px-2",
                 style: {
                     color: "#5C2018"
                 },
