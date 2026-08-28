@@ -22495,6 +22495,44 @@ const k5 = ({
             })]
         })
     },
+    FairytaleQuoteSection = () => f.jsx("section", {
+        id: "fairytale-quote",
+        className: "min-h-screen flex items-center justify-center px-8 py-16",
+        children: f.jsxs(W.div, {
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "max-w-2xl text-center",
+            style: {
+                color: "#5C2018"
+            },
+            children: [f.jsx("p", {
+                className: "font-script text-4xl md:text-6xl leading-relaxed mb-4",
+                children: "Once in a while"
+            }), f.jsx("p", {
+                className: "font-display text-sm md:text-lg tracking-[0.12em] italic mb-8",
+                children: "right in the middle of an ordinary life"
+            }), f.jsx("p", {
+                className: "font-script text-4xl md:text-6xl leading-relaxed",
+                children: "Love gives us a"
+            }), f.jsx("p", {
+                className: "font-script text-5xl md:text-7xl mt-3",
+                children: "Fairytale"
+            })]
+        })
+    }),
     j5 = "./assets/images/venue-illustration-DebdGS8I.png",
     O5 = () => {
         const {
@@ -32460,7 +32498,7 @@ const FV = () => {
                 startPlaying: e
             }), f.jsx(k5, {
                 onFirstClick: n
-            }), f.jsx(N5, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(M5, {}), f.jsx($5, {}), f.jsx(V5, {}), f.jsx(U5, {}), f.jsx(DV, {}), f.jsx(LV, {})]
+            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(M5, {}), f.jsx($5, {}), f.jsx(V5, {}), f.jsx(U5, {}), f.jsx(DV, {}), f.jsx(LV, {})]
         })
     },
     mh = "admin_session_token";
