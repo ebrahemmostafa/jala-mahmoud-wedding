@@ -22764,6 +22764,13 @@ const k5 = ({
                     lineHeight: 1.65
                 },
                 children: "This is not the start of something new, but the continuation of something true."
+            }), f.jsxs("p", {
+                className: "font-script text-4xl md:text-5xl mt-12",
+                style: {
+                    color: "#5C2018",
+                    lineHeight: 1.35
+                },
+                children: ["A Tale", f.jsx("br", {}, "tale-line-1"), "As Old As", f.jsx("br", {}, "tale-line-2"), "Time"]
             })]
         })
     }),
