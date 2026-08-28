@@ -21822,7 +21822,7 @@ const x5 = {
             "gifts.withLove": "With all our love",
             "gifts.bankDetails": "Bank details",
             "gifts.accountHolder": "ACCOUNT HOLDER",
-            "gifts.concept": "REFERENCE: Sam & Sofia Wedding",
+            "gifts.concept": "REFERENCE: Ezz & Jala Wedding",
             "transport.howToGet": "How to get there",
             "transport.title": "Transport",
             "transport.description": "We have organized buses from the center of Florence to the villa so you can enjoy the celebration without worries.",
@@ -21888,7 +21888,7 @@ const x5 = {
             "gifts.withLove": "Con tutto il nostro amore",
             "gifts.bankDetails": "Coordinate bancarie",
             "gifts.accountHolder": "INTESTATARIO",
-            "gifts.concept": "CAUSALE: Matrimonio Sam & Sofia",
+            "gifts.concept": "CAUSALE: Matrimonio Ezz & Jala",
             "transport.howToGet": "Come arrivare",
             "transport.title": "Trasporto",
             "transport.description": "Abbiamo organizzato autobus dal centro di Firenze alla villa per permettervi di godervi la festa senza preoccupazioni.",
@@ -22069,7 +22069,7 @@ const k5 = ({
                         style: {
                             color: "#5C2018"
                         },
-                        children: "Sam"
+                        children: "Ezz"
                     }), f.jsx("span", {
                         className: "font-script text-3xl md:text-4xl",
                         style: {
@@ -22081,7 +22081,7 @@ const k5 = ({
                         style: {
                             color: "#5C2018"
                         },
-                        children: "Sofía"
+                        children: "Jala"
                     })]
                 })
             }), !1 && f.jsx(W.div, {
@@ -23461,7 +23461,7 @@ const k5 = ({
                         style: {
                             color: "#5C2018"
                         },
-                        children: [e("gifts.accountHolder"), ": SAM & SOFIA"]
+                        children: [e("gifts.accountHolder"), ": EZZ & JALA"]
                     }), f.jsx("p", {
                         className: "font-body text-sm tracking-wide mb-2",
                         style: {
@@ -32603,7 +32603,7 @@ const Ow = "./assets/audio/intro-music-CzqJOUtA.mp3",
                                 style: {
                                     color: "#5C2018"
                                 },
-                                children: "Sam & Sofía"
+                                children: "Ezz & Jala"
                             })]
                         })
                     })
@@ -32670,7 +32670,7 @@ const FV = () => {
                 startPlaying: e
             }), f.jsx(k5, {
                 onComplete: n
-            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(LocationQuoteSection, {}), f.jsx(M5, {}), f.jsx($5, {}), f.jsx(V5, {}), f.jsx(U5, {}), f.jsx(DV, {}), f.jsx(LV, {})]
+            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(LocationQuoteSection, {}), f.jsx($5, {}), f.jsx(LV, {})]
         })
     },
     mh = "admin_session_token";
