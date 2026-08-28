@@ -15854,7 +15854,7 @@ function ta(e) {
 
 function jI(e) {
     let {
-        basename: t = window.location.pathname.substring(0, window.location.pathname.indexOf('/new_prem2') + 10),
+        basename: t = window.location.pathname.startsWith("/jala-mahmoud-wedding") ? "/jala-mahmoud-wedding" : "/",
         children: n = null,
         location: r,
         navigationType: s = $r.Pop,
