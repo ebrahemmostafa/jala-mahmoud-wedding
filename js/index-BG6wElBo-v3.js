@@ -21792,10 +21792,10 @@ const x5 = {
     W = EL(S5, LL),
     C5 = "./assets/images/curtain-closed-Bpkadld4.jpg",
     E5 = "./assets/images/curtain-open-C9MqdT6G.jpg",
-    _5 = "./assets/videos/curtain-video-BAKLj3Y5.mp4",
+    _5 = "./assets/videos/envelope-to-book-details.mp4",
     T5 = {
         en: {
-            "intro.tapToContinue": "Tap to continue",
+            "intro.tapToContinue": "Tap to Open",
             "intro.invitation": "You are cordially invited to celebrate the wedding of",
             "intro.personalMessage": "We would like to invite you to celebrate with us the most special day of our lives. It would be an honor to have you present at this important moment.",
             "intro.scroll": "Scroll",
@@ -21861,7 +21861,7 @@ const x5 = {
             "demo.infoSections": "All sections shown are samples and can be changed"
         },
         it: {
-            "intro.tapToContinue": "Tocca per continuare",
+            "intro.tapToContinue": "Tocca per aprire",
             "intro.invitation": "Siete cordialmente invitati a celebrare il matrimonio di",
             "intro.personalMessage": "Vorremmo invitarvi a festeggiare con noi il giorno più speciale della nostra vita. Sarebbe un onore avervi presenti in questo momento così importante.",
             "intro.scroll": "Scorri",
@@ -21944,7 +21944,7 @@ const k5 = ({
         const [n, r] = g.useState("idle"), [s, i] = g.useState(!1), o = g.useRef(null), {
             t: a
         } = as();
-        g.useEffect(() => (n === "idle" ? document.body.style.overflow = "hidden" : document.body.style.overflow = "", () => {
+        g.useEffect(() => (n !== "done" ? document.body.style.overflow = "hidden" : document.body.style.overflow = "", () => {
             document.body.style.overflow = ""
         }), [n]), g.useEffect(() => {
             const d = new Image;
@@ -21966,19 +21966,18 @@ const k5 = ({
                 children: [f.jsx("img", {
                     src: C5,
                     alt: "",
-                    className: "absolute inset-0 w-full h-full object-cover"
+                    className: "hidden"
                 }), f.jsxs(W.div, {
-                    className: "absolute inset-0 flex flex-col items-center justify-center",
+                    className: "absolute inset-x-0 bottom-8 z-10 flex flex-col items-center justify-center",
                     initial: {
                         opacity: 0
                     },
                     animate: {
-                        opacity: [0, .9, .9, .3, .9, .3, 0]
+                        opacity: [.65, 1, .65]
                     },
                     transition: {
-                        duration: 5,
-                        delay: 1.5,
-                        times: [0, .15, .35, .5, .65, .8, 1],
+                        duration: 1.6,
+                        repeat: 1 / 0,
                         ease: "easeInOut"
                     },
                     children: [f.jsxs("div", {
@@ -22027,9 +22026,10 @@ const k5 = ({
                             })
                         })]
                     }), f.jsx("p", {
-                        className: "mt-4 font-body text-xs tracking-wide text-center",
+                        className: "mt-4 font-display text-sm font-medium tracking-[0.2em] uppercase text-center",
                         style: {
-                            color: "rgba(255, 255, 255, 0.8)"
+                            color: "rgba(255, 255, 255, 0.95)",
+                            textShadow: "0 2px 12px rgba(0, 0, 0, 0.9)"
                         },
                         children: a("intro.tapToContinue")
                     })]
@@ -22037,13 +22037,13 @@ const k5 = ({
             }), f.jsx("video", {
                 ref: o,
                 src: _5,
-                className: `absolute inset-0 w-full h-full object-cover ${n==="idle"?"hidden":"block"}`,
+                className: "absolute inset-0 block w-full h-full object-contain bg-black",
                 onEnded: u,
                 onTimeUpdate: c,
                 playsInline: !0,
                 muted: !0,
                 preload: "auto"
-            }), (s || n === "done") && f.jsx(W.div, {
+            }), !1 && f.jsx(W.div, {
                 className: "absolute inset-0 flex items-center justify-center",
                 initial: {
                     opacity: 0
@@ -22083,7 +22083,7 @@ const k5 = ({
                         children: "Sofía"
                     })]
                 })
-            }), (s || n === "done") && f.jsx(W.div, {
+            }), !1 && f.jsx(W.div, {
                 className: "absolute bottom-40 left-0 right-0 flex justify-center px-4",
                 initial: {
                     opacity: 0
