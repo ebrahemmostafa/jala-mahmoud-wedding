@@ -22303,7 +22303,7 @@ const k5 = ({
     N5 = () => {
         const [e, t] = g.useState(0), [n, r] = g.useState(!1), [s, i] = g.useState(!1), o = g.useRef(null), {
             t: a
-        } = as(), l = g.useMemo(() => ["10", "Sept", "2027"], []), c = () => {
+        } = as(), l = g.useMemo(() => ["1", "Oct", "2026"], []), c = () => {
             t(u => {
                 const d = u + 1;
                 return d === 3 && (r(!0), setTimeout(() => {
@@ -22660,7 +22660,7 @@ const k5 = ({
                     style: {
                         color: "#5C2018"
                     },
-                    children: "September 10, 2027"
+                    children: "October 1, 2026"
                 })
             }), f.jsx(W.div, {
                 initial: {
@@ -22746,7 +22746,7 @@ const k5 = ({
         })]
     }),
     I5 = () => {
-        const e = new Date("2026-10-31T16:30:00"),
+        const e = new Date("2026-10-01T16:30:00"),
             [t, n] = g.useState(lw(e)),
             {
                 t: r
