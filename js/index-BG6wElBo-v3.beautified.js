@@ -22497,15 +22497,19 @@ const k5 = ({
     },
     FairytaleQuoteSection = () => f.jsx("section", {
         id: "fairytale-quote",
-        className: "min-h-screen flex items-center justify-center px-8 py-16",
-        children: f.jsxs(W.div, {
+        className: "min-h-screen flex items-center justify-center px-4 py-8",
+        children: f.jsx(W.img, {
+            src: "./assets/images/fairytale-quote-card.png",
+            alt: "Once in a while, right in the middle of an ordinary life, love gives us a fairytale",
             initial: {
                 opacity: 0,
-                y: 24
+                y: 24,
+                scale: .96
             },
             whileInView: {
                 opacity: 1,
-                y: 0
+                y: 0,
+                scale: 1
             },
             transition: {
                 duration: .9,
@@ -22514,23 +22518,13 @@ const k5 = ({
             viewport: {
                 once: !0
             },
-            className: "max-w-2xl text-center",
+            className: "block w-auto h-auto",
             style: {
-                color: "#5C2018"
-            },
-            children: [f.jsx("p", {
-                className: "font-script text-4xl md:text-6xl leading-relaxed mb-4",
-                children: "Once in a while"
-            }), f.jsx("p", {
-                className: "font-display text-sm md:text-lg tracking-[0.12em] italic mb-8",
-                children: "right in the middle of an ordinary life"
-            }), f.jsx("p", {
-                className: "font-script text-4xl md:text-6xl leading-relaxed",
-                children: "Love gives us a"
-            }), f.jsx("p", {
-                className: "font-script text-5xl md:text-7xl mt-3",
-                children: "Fairytale"
-            })]
+                maxWidth: "min(92vw, 720px)",
+                maxHeight: "88vh",
+                objectFit: "contain",
+                filter: "drop-shadow(0 20px 35px rgba(64, 32, 10, 0.28))"
+            }
         })
     }),
     j5 = "./assets/images/venue-illustration-DebdGS8I.png",
