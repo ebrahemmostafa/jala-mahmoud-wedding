@@ -22948,12 +22948,12 @@ const k5 = ({
                 viewport: {
                     once: !0
                 },
-                className: "welcome-partition-title font-script text-4xl md:text-5xl mb-5",
+                className: "welcome-partition-title font-script text-5xl md:text-6xl mb-5",
                 style: {
                     color: "#5C2018"
                 },
                 children: "Welcome"
-            }), f.jsx(W.p, {
+            }), f.jsxs(W.div, {
                 initial: {
                     opacity: 0,
                     y: 12
@@ -22969,11 +22969,15 @@ const k5 = ({
                 viewport: {
                     once: !0
                 },
-                className: "font-body text-base md:text-lg leading-relaxed text-center max-w-2xl px-2",
+                className: "welcome-copy font-body text-lg md:text-xl leading-relaxed text-center max-w-2xl px-2",
                 style: {
                     color: "#5C2018"
                 },
-                children: "We warmly invite you to celebrate our Katb Ketab day with us in the beautiful town of Cairo, Nasr city. We look forward to sharing this unforgettable moment with our most special people."
+                children: [f.jsx("p", {
+                    children: "We warmly invite you to celebrate our katb ketab day with us in the beautiful town of cairo, Nasr city."
+                }), f.jsx("p", {
+                    children: "We look forward to sharing this unforgettable moment with our most special people."
+                })]
             })]
             }), f.jsx("section", {
                 id: "dear-guests",

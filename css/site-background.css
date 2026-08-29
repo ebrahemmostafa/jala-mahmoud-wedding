@@ -46,3 +46,10 @@
 .dear-guests-page .dear-guests-rings {
     margin-bottom: clamp(3.5rem, 10vw, 4.5rem);
 }
+
+/* Preserve the deliberate pause between the two Welcome sentences. */
+.welcome-page .welcome-copy {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 8vw, 3rem);
+}
