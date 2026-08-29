@@ -61,3 +61,21 @@
     height: auto;
     margin-top: clamp(1rem, 5vh, 3rem);
 }
+
+/* Give each Arabic sentence its own spacious, readable full-screen page. */
+.arabic-message-page .arabic-message-text {
+    max-width: 50rem;
+    margin: 0;
+    color: #5C2018;
+    font-family: "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
+    font-size: clamp(2.75rem, 11vw, 6rem);
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.arabic-message-page .arabic-message-text-long {
+    max-width: 44rem;
+    font-size: clamp(2rem, 7.5vw, 4.5rem);
+}

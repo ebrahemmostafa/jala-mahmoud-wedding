@@ -23350,6 +23350,31 @@ const k5 = ({
             className: "post-dress-opening-art"
         })
     }),
+    ArabicMessageSection = e => f.jsx("section", {
+        id: e.id,
+        className: "invitation-page arabic-message-page flex items-center justify-center px-8",
+        children: f.jsx(W.p, {
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: `arabic-message-text${e.long ? " arabic-message-text-long" : ""}`,
+            lang: "ar",
+            dir: "rtl",
+            children: e.text
+        })
+    }),
     F5 = "./assets/images/gift-icon-BssCdzah.png",
     V5 = () => {
         const {
@@ -32687,7 +32712,14 @@ const FV = () => {
                 startPlaying: e
             }), f.jsx(k5, {
                 onComplete: n
-            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(LocationQuoteSection, {}), f.jsx($5, {}), f.jsx(PostDressOpeningSection, {})]
+            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(LocationQuoteSection, {}), f.jsx($5, {}), f.jsx(PostDressOpeningSection, {}), f.jsx(ArabicMessageSection, {
+                id: "gratitude-message",
+                text: "بكل الحب والامتنان،"
+            }), f.jsx(ArabicMessageSection, {
+                id: "new-chapter-message",
+                text: "ندعوكم لتشهدوا بداية فصلٍ جديدٍ من حياتنا",
+                long: !0
+            })]
         })
     },
     mh = "admin_session_token";
