@@ -22757,10 +22757,9 @@ const k5 = ({
                         opacity: ".55"
                     })]
                 }), f.jsx("p", {
-                    className: "text-2xl md:text-3xl font-semibold",
+                    className: "font-body text-2xl md:text-3xl",
                     style: {
                         color: "#3D2A20",
-                        fontFamily: "'Courier New', Courier, monospace",
                         lineHeight: 1.65
                     },
                     children: "This is not the start of something new, but the continuation of something true."
