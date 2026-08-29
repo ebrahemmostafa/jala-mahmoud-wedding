@@ -53,15 +53,3 @@
     flex-direction: column;
     gap: clamp(2rem, 8vw, 3rem);
 }
-
-/* Present the Bismillah as its own quiet, full-page calligraphic moment. */
-.bismillah-page .bismillah-calligraphy {
-    max-width: 100%;
-    margin: 0;
-    color: #5C2018;
-    font-family: "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
-    font-size: clamp(2.25rem, 9.5vw, 5rem);
-    font-weight: 400;
-    line-height: 1.9;
-    white-space: nowrap;
-}
