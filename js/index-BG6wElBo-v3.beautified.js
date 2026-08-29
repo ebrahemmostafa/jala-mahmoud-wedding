@@ -23326,6 +23326,30 @@ const k5 = ({
             })]
         })
     },
+    PostDressOpeningSection = () => f.jsx("section", {
+        id: "post-dress-opening",
+        className: "invitation-page post-dress-opening-page flex flex-col items-center justify-start px-8",
+        children: f.jsx(W.img, {
+            src: "./assets/images/bismillah-calligraphy.svg",
+            alt: "بسم الله الرحمن الرحيم",
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "post-dress-opening-art"
+        })
+    }),
     F5 = "./assets/images/gift-icon-BssCdzah.png",
     V5 = () => {
         const {
@@ -32663,7 +32687,7 @@ const FV = () => {
                 startPlaying: e
             }), f.jsx(k5, {
                 onComplete: n
-            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(LocationQuoteSection, {}), f.jsx($5, {})]
+            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(LocationQuoteSection, {}), f.jsx($5, {}), f.jsx(PostDressOpeningSection, {})]
         })
     },
     mh = "admin_session_token";
