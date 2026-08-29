@@ -23235,7 +23235,7 @@ const k5 = ({
             })]
         })
     }),
-    L5 = "./assets/images/dresscode-illustration-BT5yPEQh.png",
+    L5 = "./assets/images/dresscode-illustration-BT5yPEQh.png?v=dancers-8",
     $5 = () => {
         const {
             t: e
@@ -23283,7 +23283,7 @@ const k5 = ({
                 viewport: {
                     once: !0
                 },
-                className: "w-full max-w-xs mb-8",
+                className: "w-full max-w-2xl mb-8",
                 children: f.jsx("img", {
                     src: L5,
                     alt: "Dress Code Illustration",
