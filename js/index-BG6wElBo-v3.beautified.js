@@ -22974,7 +22974,7 @@ const k5 = ({
                     color: "#5C2018"
                 },
                 children: [f.jsx("p", {
-                    children: "We warmly invite you to celebrate our katb ketab day with us in the beautiful town of cairo, Nasr city."
+                    children: "We warmly invite you to celebrate our katb ketab day with us in the beautiful town of Nasr City, Cairo."
                 }), f.jsx("p", {
                     children: "We look forward to sharing this unforgettable moment with our most special people."
                 })]
