@@ -22788,7 +22788,7 @@ const k5 = ({
                 viewport: {
                     once: !0
                 },
-                className: "font-script text-4xl md:text-5xl text-center",
+                className: "font-script text-5xl md:text-6xl text-center",
                 style: {
                     color: "#5C2018",
                     lineHeight: 1.35
