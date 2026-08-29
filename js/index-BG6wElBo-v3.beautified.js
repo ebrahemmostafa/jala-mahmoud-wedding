@@ -22533,7 +22533,7 @@ const k5 = ({
             t: e
         } = as();
         return f.jsxs("section", {
-            className: "bg-white flex flex-col items-center justify-start pt-8 pb-12 px-8",
+            className: "invitation-content-section bg-white flex flex-col items-center justify-start pt-8 pb-12 px-8",
             children: [f.jsx(W.div, {
                 initial: {
                     opacity: 0,
@@ -22696,7 +22696,7 @@ const k5 = ({
     },
     LocationQuoteSection = () => f.jsx("section", {
         id: "location-quote",
-        className: "flex items-center justify-center px-8 py-20",
+        className: "invitation-content-section flex items-center justify-center px-8 py-20",
         style: {
             backgroundColor: "#FAF8F5",
             minHeight: "70vh"
@@ -22840,9 +22840,11 @@ const k5 = ({
                 n(lw(e))
             }, 1e3);
             return () => clearInterval(s)
-        }, []), f.jsxs("section", {
-            className: "py-12 bg-white flex flex-col items-center justify-center px-8",
-            children: [f.jsx(W.div, {
+        }, []), f.jsxs(f.Fragment, {
+            children: [f.jsxs("section", {
+                id: "countdown",
+                className: "invitation-page countdown-page bg-white flex flex-col items-center justify-center px-8",
+                children: [f.jsx(W.div, {
                 initial: {
                     opacity: 0,
                     y: 20
@@ -22903,7 +22905,11 @@ const k5 = ({
                     color: "#5C2018"
                 },
                 children: r("countdown.forTheBigDay")
-            }), f.jsx(W.h3, {
+            })]
+            }), f.jsxs("section", {
+                id: "welcome",
+                className: "invitation-page welcome-page bg-white flex flex-col items-center justify-center px-8",
+                children: [f.jsx(W.h3, {
                 initial: {
                     opacity: 0,
                     y: 12
@@ -22919,7 +22925,7 @@ const k5 = ({
                 viewport: {
                     once: !0
                 },
-                className: "font-script text-4xl md:text-5xl mt-10 mb-5",
+                className: "welcome-partition-title font-script text-4xl md:text-5xl mb-5",
                 style: {
                     color: "#5C2018"
                 },
@@ -22945,7 +22951,11 @@ const k5 = ({
                     color: "#5C2018"
                 },
                 children: "We warmly invite you to celebrate our Katb Ketab day with us in the beautiful town of Cairo, Nasr city. We look forward to sharing this unforgettable moment with our most special people."
-            }), f.jsxs(W.div, {
+            })]
+            }), f.jsx("section", {
+                id: "dear-guests",
+                className: "invitation-page dear-guests-page bg-white flex flex-col items-center justify-center px-8",
+                children: f.jsxs(W.div, {
                 initial: {
                     opacity: 0,
                     y: 16
@@ -22961,7 +22971,7 @@ const k5 = ({
                 viewport: {
                     once: !0
                 },
-                className: "flex flex-col items-center text-center max-w-2xl mt-12 px-2",
+                className: "dear-guests-partition flex flex-col items-center text-center max-w-2xl px-2",
                 style: {
                     color: "#5C2018"
                 },
@@ -22969,7 +22979,7 @@ const k5 = ({
                     className: "font-script text-4xl md:text-5xl mb-5",
                     children: "Dear Guests,"
                 }), f.jsxs("div", {
-                    className: "relative w-20 h-10 mb-7",
+                    className: "dear-guests-rings relative w-20 h-10",
                     "aria-hidden": !0,
                     children: [f.jsx("span", {
                         className: "absolute w-9 h-9 rounded-full border-2",
@@ -22997,6 +23007,7 @@ const k5 = ({
                     className: "font-body text-base md:text-lg leading-relaxed",
                     children: "Join us as we celebrate the beginning of our forever."
                 })]
+            })
             })]
         })
     },
@@ -23207,7 +23218,7 @@ const k5 = ({
             t: e
         } = as();
         return f.jsxs("section", {
-            className: "bg-white flex flex-col items-center justify-center py-12 px-8",
+            className: "invitation-content-section bg-white flex flex-col items-center justify-center py-12 px-8",
             children: [f.jsx(W.div, {
                 initial: {
                     opacity: 0,
@@ -32498,7 +32509,7 @@ const Ow = "./assets/audio/intro-music-CzqJOUtA.mp3",
             t: e
         } = as();
         return f.jsx("section", {
-            className: "py-12 bg-white flex flex-col items-center justify-center px-6",
+            className: "invitation-content-section py-12 bg-white flex flex-col items-center justify-center px-6",
             children: f.jsx(W.div, {
                 initial: {
                     opacity: 0,
