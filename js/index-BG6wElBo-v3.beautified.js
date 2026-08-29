@@ -22631,7 +22631,7 @@ const k5 = ({
                     },
                     children: "War Factory Club – Salah Salem – Next to Air Force House - Nasr City."
                 }), f.jsx("a", {
-                    href: "https://maps.app.goo.gl/y2zqjt7mvmMor6mp7?g_st=iw",
+                    href: "https://www.google.com/maps/place/Analia/@30.0822413,31.3169189,17z/data=!3m1!4b1!4m6!3m5!1s0x14583f34f46ec491:0x93ec05b53c13f034!8m2!3d30.0822413!4d31.3194938!16s%2Fg%2F11qbtf0j1y?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
                     target: "_blank",
                     rel: "noopener noreferrer",
                     className: "inline-flex items-center justify-center mt-5 px-6 py-3 rounded-full font-body text-xs tracking-[0.12em] uppercase transition-transform duration-300 hover:scale-105",
