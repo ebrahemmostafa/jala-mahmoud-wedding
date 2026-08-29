@@ -22694,85 +22694,108 @@ const k5 = ({
             })]
         })
     },
-    LocationQuoteSection = () => f.jsx("section", {
-        id: "location-quote",
-        className: "invitation-content-section flex items-center justify-center px-8 py-20",
-        style: {
-            backgroundColor: "#FAF8F5",
-            minHeight: "70vh"
-        },
-        children: f.jsxs(W.div, {
-            initial: {
-                opacity: 0,
-                y: 24
+    LocationQuoteSection = () => f.jsxs(f.Fragment, {
+        children: [f.jsx("section", {
+            id: "location-quote",
+            className: "invitation-page location-quote-page flex items-center justify-center px-8",
+            style: {
+                backgroundColor: "#FAF8F5"
             },
-            whileInView: {
-                opacity: 1,
-                y: 0
-            },
-            transition: {
-                duration: .8,
-                ease: "easeOut"
-            },
-            viewport: {
-                once: !0
-            },
-            className: "flex flex-col items-center text-center max-w-2xl",
-            children: [f.jsxs("svg", {
-                width: "112",
-                height: "72",
-                viewBox: "0 0 112 72",
-                fill: "none",
-                stroke: "#5C2018",
-                strokeWidth: "2.2",
-                strokeLinecap: "round",
-                strokeLinejoin: "round",
-                className: "mb-10",
-                "aria-hidden": !0,
-                children: [f.jsx("ellipse", {
-                    cx: "43",
-                    cy: "32",
-                    rx: "26",
-                    ry: "16",
-                    transform: "rotate(-18 43 32)"
-                }), f.jsx("ellipse", {
-                    cx: "70",
-                    cy: "40",
-                    rx: "28",
-                    ry: "17",
-                    transform: "rotate(18 70 40)"
-                }), f.jsx("ellipse", {
-                    cx: "43",
-                    cy: "32",
-                    rx: "21",
-                    ry: "12",
-                    transform: "rotate(-18 43 32)",
-                    opacity: ".55"
-                }), f.jsx("ellipse", {
-                    cx: "70",
-                    cy: "40",
-                    rx: "23",
-                    ry: "13",
-                    transform: "rotate(18 70 40)",
-                    opacity: ".55"
-                })]
-            }), f.jsx("p", {
-                className: "text-2xl md:text-3xl font-semibold",
-                style: {
-                    color: "#3D2A20",
-                    fontFamily: "'Courier New', Courier, monospace",
-                    lineHeight: 1.65
+            children: f.jsxs(W.div, {
+                initial: {
+                    opacity: 0,
+                    y: 24
                 },
-                children: "This is not the start of something new, but the continuation of something true."
-            }), f.jsxs("p", {
-                className: "font-script text-4xl md:text-5xl mt-12",
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: .8,
+                    ease: "easeOut"
+                },
+                viewport: {
+                    once: !0
+                },
+                className: "flex flex-col items-center text-center max-w-2xl",
+                children: [f.jsxs("svg", {
+                    width: "112",
+                    height: "72",
+                    viewBox: "0 0 112 72",
+                    fill: "none",
+                    stroke: "#5C2018",
+                    strokeWidth: "2.2",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    className: "mb-10",
+                    "aria-hidden": !0,
+                    children: [f.jsx("ellipse", {
+                        cx: "43",
+                        cy: "32",
+                        rx: "26",
+                        ry: "16",
+                        transform: "rotate(-18 43 32)"
+                    }), f.jsx("ellipse", {
+                        cx: "70",
+                        cy: "40",
+                        rx: "28",
+                        ry: "17",
+                        transform: "rotate(18 70 40)"
+                    }), f.jsx("ellipse", {
+                        cx: "43",
+                        cy: "32",
+                        rx: "21",
+                        ry: "12",
+                        transform: "rotate(-18 43 32)",
+                        opacity: ".55"
+                    }), f.jsx("ellipse", {
+                        cx: "70",
+                        cy: "40",
+                        rx: "23",
+                        ry: "13",
+                        transform: "rotate(18 70 40)",
+                        opacity: ".55"
+                    })]
+                }), f.jsx("p", {
+                    className: "text-2xl md:text-3xl font-semibold",
+                    style: {
+                        color: "#3D2A20",
+                        fontFamily: "'Courier New', Courier, monospace",
+                        lineHeight: 1.65
+                    },
+                    children: "This is not the start of something new, but the continuation of something true."
+                })]
+            })
+        }), f.jsx("section", {
+            id: "tale-as-old-as-time",
+            className: "invitation-page tale-title-page flex items-center justify-center px-8",
+            style: {
+                backgroundColor: "#FAF8F5"
+            },
+            children: f.jsxs(W.p, {
+                initial: {
+                    opacity: 0,
+                    y: 24
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: .8,
+                    ease: "easeOut"
+                },
+                viewport: {
+                    once: !0
+                },
+                className: "font-script text-4xl md:text-5xl text-center",
                 style: {
                     color: "#5C2018",
                     lineHeight: 1.35
                 },
                 children: ["A Tale", f.jsx("br", {}, "tale-line-1"), "As Old As", f.jsx("br", {}, "tale-line-2"), "Time"]
-            })]
-        })
+            })
+        })]
     }),
     lw = e => {
         const t = e.getTime() - new Date().getTime();
