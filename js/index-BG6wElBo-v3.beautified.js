@@ -22641,7 +22641,7 @@ const k5 = ({
                     },
                     children: "View on Google Maps"
                 })]
-            }), f.jsx(W.div, {
+            }), f.jsxs(W.div, {
                 initial: {
                     opacity: 0,
                     y: 30
@@ -22659,13 +22659,19 @@ const k5 = ({
                     once: !0
                 },
                 className: "text-center mb-10",
-                children: f.jsx("p", {
+                children: [f.jsx("p", {
                     className: "font-display text-2xl md:text-3xl tracking-wide",
                     style: {
                         color: "#5C2018"
                     },
                     children: "October 1, 2026"
-                })
+                }), f.jsx("p", {
+                    className: "font-body text-lg md:text-xl tracking-wide mt-3",
+                    style: {
+                        color: "#5C2018"
+                    },
+                    children: "5:00 PM – 7:00 PM"
+                })]
             }), f.jsx(W.div, {
                 initial: {
                     opacity: 0,
