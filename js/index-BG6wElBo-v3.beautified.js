@@ -23306,63 +23306,13 @@ const k5 = ({
                 viewport: {
                     once: !0
                 },
-                className: "text-center max-w-xl mb-8",
+                className: "text-center max-w-xl",
                 children: f.jsx("p", {
                     className: "font-body text-base leading-relaxed",
                     style: {
                         color: "#5C2018"
                     },
                     children: e("dressCode.description")
-                })
-            }), f.jsx(W.div, {
-                initial: {
-                    opacity: 0,
-                    y: 30
-                },
-                whileInView: {
-                    opacity: 1,
-                    y: 0
-                },
-                transition: {
-                    duration: .8,
-                    ease: "easeOut",
-                    delay: .6
-                },
-                viewport: {
-                    once: !0
-                },
-                className: "text-center mb-8",
-                children: f.jsx("p", {
-                    className: "font-display text-3xl md:text-4xl tracking-wide",
-                    style: {
-                        color: "#5C2018"
-                    },
-                    children: e("dressCode.formal")
-                })
-            }), f.jsx(W.div, {
-                initial: {
-                    opacity: 0,
-                    y: 30
-                },
-                whileInView: {
-                    opacity: 1,
-                    y: 0
-                },
-                transition: {
-                    duration: .8,
-                    ease: "easeOut",
-                    delay: .8
-                },
-                viewport: {
-                    once: !0
-                },
-                className: "text-center",
-                children: f.jsx("p", {
-                    className: "font-script text-2xl md:text-3xl",
-                    style: {
-                        color: "#5C2018"
-                    },
-                    children: e("dressCode.avoidWhite")
                 })
             })]
         })
