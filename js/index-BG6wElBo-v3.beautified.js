@@ -22697,7 +22697,7 @@ const k5 = ({
                         children: ["Please note that our celebration will be an ", f.jsx("span", {
                             className: "adults-only-note-emphasis",
                             children: "adults-only celebration"
-                        }), ". We kindly ask that you join us without children. We look forward to celebrating this special day with you. 🤍"]
+                        }), ". We kindly ask that you join us without children. We look forward to celebrating this special day with you."]
                     }), f.jsxs("p", {
                         className: "adults-only-note-ar",
                         dir: "rtl",
@@ -22705,7 +22705,7 @@ const k5 = ({
                         children: ["نود التنويه بأن المناسبة ستكون ", f.jsx("span", {
                             className: "adults-only-note-highlight-ar",
                             children: "للكبار فقط"
-                        }), "، ونرجو التكرم بالحضور بدون أطفال. يسعدنا مشاركتكم لنا هذه المناسبة المميزة. 🤍"]
+                        }), "، ونرجو التكرم بالحضور بدون أطفال. يسعدنا مشاركتكم لنا هذه المناسبة المميزة."]
                     })]
                 })
             }), f.jsx(W.div, {
