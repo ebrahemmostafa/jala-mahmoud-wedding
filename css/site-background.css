@@ -98,3 +98,10 @@
     width: min(92vw, 44.0625rem);
     height: auto;
 }
+
+/* Finish with the supplied interlocking-rings illustration. */
+.final-rings-page .final-rings-art {
+    display: block;
+    width: min(86vw, 34rem);
+    height: auto;
+}

@@ -23423,6 +23423,30 @@ const k5 = ({
             className: "final-blessing-art"
         })
     }),
+    FinalRingsSection = () => f.jsx("section", {
+        id: "final-rings",
+        className: "invitation-page final-rings-page flex items-center justify-center",
+        children: f.jsx(W.img, {
+            src: "./assets/images/final-rings-vector.svg?v=1",
+            alt: "خاتما زفاف متداخلان مع قلوب صغيرة",
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "final-rings-art"
+        })
+    }),
     F5 = "./assets/images/gift-icon-BssCdzah.png",
     V5 = () => {
         const {
@@ -32767,7 +32791,7 @@ const FV = () => {
                 id: "new-chapter-message",
                 text: "ندعوكم لتشهدوا بداية فصلٍ جديدٍ من حياتنا",
                 long: !0
-            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {})]
+            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {})]
         })
     },
     mh = "admin_session_token";
