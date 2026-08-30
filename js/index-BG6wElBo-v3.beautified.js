@@ -23378,9 +23378,9 @@ const k5 = ({
     FinalReviewSection = () => f.jsx("section", {
         id: "final-review",
         className: "invitation-page final-review-page flex items-center justify-center",
-        children: f.jsx(W.img, {
-            src: "./assets/images/review-jala.svg?v=1",
-            alt: "محمد وجالا — بارك الله لكما وبارك عليكما وجمع بينكما في خير",
+        children: f.jsx(W.div, {
+            role: "img",
+            "aria-label": "محمد وجالا — بارك الله لكما وبارك عليكما وجمع بينكما في خير",
             initial: {
                 opacity: 0,
                 y: 24

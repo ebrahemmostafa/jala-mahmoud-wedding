@@ -89,5 +89,14 @@
 .final-review-page .final-review-art {
     display: block;
     width: min(100%, 24.8125rem);
-    height: auto;
+    aspect-ratio: 397 / 559;
+    background-color: #5C2018;
+    -webkit-mask-image: url("../assets/images/review-jala.svg?v=2");
+    mask-image: url("../assets/images/review-jala.svg?v=2");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
