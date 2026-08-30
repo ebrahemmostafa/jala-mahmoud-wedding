@@ -31888,19 +31888,27 @@ const kV = "https://qsymxqsigmilfbmmnlqi.supabase.co",
             persistSession: !0,
             autoRefreshToken: !0
         }
-    });
+    }),
+    jalaMessagesClient = _V(
+        "https://jcuqwcwkowtjxcykstlf.supabase.co",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpjdXF3Y3drb3d0anhjeWtzdGxmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYxMTA5MzMsImV4cCI6MjEwMTY4NjkzM30.fjoIG4hPOmqAHE90T16OGtvzdY1k3L2PjWSInZQQidg", {
+            auth: {
+                persistSession: !1,
+                autoRefreshToken: !1
+            }
+        }
+    );
 
 function RV() {
     return tC({
         mutationFn: async e => {
             const {
-                data: t,
                 error: n
-            } = await bl.functions.invoke("submit-rsvp", {
-                body: e
+            } = await jalaMessagesClient.from("jala_wedding_messages").insert({
+                full_name: e.full_name.trim(),
+                message: e.message.trim()
             });
             if (n) throw n;
-            if (t != null && t.error) throw new Error(t.error);
             return {
                 isUpdate: !1
             }

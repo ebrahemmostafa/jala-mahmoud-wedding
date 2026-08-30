@@ -1,10 +1,10 @@
 (() => {
     "use strict";
 
-    const SUPABASE_URL = "https://qsymxqsigmilfbmmnlqi.supabase.co";
-    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzeW14cXNpZ21pbGZibW1ubHFpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA5MTI4NjQsImV4cCI6MjA4NjQ4ODg2NH0.BGruTJ0vu7Y4pWpCaGmqKxYX5g6lFxA9Q8upPEIU-iI";
+    const SUPABASE_URL = "https://jcuqwcwkowtjxcykstlf.supabase.co";
+    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpjdXF3Y3drb3d0anhjeWtzdGxmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYxMTA5MzMsImV4cCI6MjEwMTY4NjkzM30.fjoIG4hPOmqAHE90T16OGtvzdY1k3L2PjWSInZQQidg";
     const REFRESH_INTERVAL = 30000;
-    const MESSAGES_ENDPOINT = `${SUPABASE_URL}/rest/v1/guests?select=full_name,message,responded_at&message=not.is.null&order=responded_at.desc`;
+    const MESSAGES_ENDPOINT = `${SUPABASE_URL}/rest/v1/jala_wedding_messages?select=full_name,message,created_at&order=created_at.desc`;
 
     const messagesCount = document.getElementById("messages-count");
     const messagesList = document.getElementById("messages-list");
@@ -57,7 +57,7 @@
     function renderMessages(guests) {
         const messages = guests
             .filter((guest) => typeof guest.message === "string" && guest.message.trim())
-            .sort((first, second) => new Date(second.responded_at || 0) - new Date(first.responded_at || 0));
+            .sort((first, second) => new Date(second.created_at || 0) - new Date(first.created_at || 0));
 
         messagesList.replaceChildren();
         messagesCount.textContent = messages.length === 1
@@ -84,8 +84,8 @@
 
             const date = document.createElement("time");
             date.className = "message-date";
-            date.dateTime = guest.responded_at || "";
-            date.textContent = formatDate(guest.responded_at);
+            date.dateTime = guest.created_at || "";
+            date.textContent = formatDate(guest.created_at);
 
             meta.append(name, date);
             card.append(message, meta);
