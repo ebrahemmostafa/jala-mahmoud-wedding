@@ -84,7 +84,7 @@
 .site-background > .final-review-page {
     padding-left: 0;
     padding-right: 0;
-    background-color: #fff !important;
+    background-color: transparent !important;
 }
 
 .final-review-page .final-review-art {
