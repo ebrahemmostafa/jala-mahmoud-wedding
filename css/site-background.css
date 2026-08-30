@@ -105,3 +105,10 @@
     width: min(66vw, 26rem);
     height: auto;
 }
+
+/* Keep the final quote and calendar legible without overpowering the page. */
+.final-date-page .final-date-art {
+    display: block;
+    width: min(74vw, 19rem);
+    height: auto;
+}
