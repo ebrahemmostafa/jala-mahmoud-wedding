@@ -102,6 +102,6 @@
 /* Finish with the supplied interlocking-rings illustration. */
 .final-rings-page .final-rings-art {
     display: block;
-    width: min(86vw, 34rem);
+    width: min(66vw, 26rem);
     height: auto;
 }
