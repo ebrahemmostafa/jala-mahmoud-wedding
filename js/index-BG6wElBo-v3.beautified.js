@@ -32759,7 +32759,125 @@ function DV() {
         })
     })
 }
-const Ow = "./assets/audio/intro-music-CzqJOUtA.mp3",
+const ArabicRsvpSection = () => {
+        const [e, t] = g.useState({
+                full_name: "",
+                message: "",
+                website: ""
+            }), [n, r] = g.useState(!1), s = RV(), {
+                toast: i
+            } = Lu(), o = async a => {
+                a.preventDefault();
+                try {
+                    await s.mutateAsync({
+                        full_name: e.full_name.trim(),
+                        attendance: "pending",
+                        guest_count: 1,
+                        message: e.message.trim(),
+                        website: e.website
+                    }), r(!0)
+                } catch (l) {
+                    console.error("Message submission error:", l), i({
+                        title: "تعذر إرسال الرسالة",
+                        description: "يرجى المحاولة مرة أخرى.",
+                        variant: "destructive"
+                    })
+                }
+            };
+        return f.jsx("section", {
+            id: "rsvp",
+            className: "invitation-page arabic-rsvp-page flex items-center justify-center px-6",
+            dir: "rtl",
+            lang: "ar",
+            children: f.jsx(W.div, {
+                initial: {
+                    opacity: 0,
+                    y: 24
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                viewport: {
+                    once: !0
+                },
+                transition: {
+                    duration: .8
+                },
+                className: "arabic-rsvp-card",
+                children: n ? f.jsxs("div", {
+                    className: "arabic-rsvp-success",
+                    role: "status",
+                    children: [f.jsx("h2", {
+                        children: "شكراً لكم"
+                    }), f.jsx("p", {
+                        children: "وصلت رسالتكم وأسعدتنا كلماتكم الجميلة 🤍"
+                    })]
+                }) : f.jsxs(f.Fragment, {
+                    children: [f.jsx("h2", {
+                        className: "arabic-rsvp-title",
+                        children: "رسالتكم تسعدنا"
+                    }), f.jsx("p", {
+                        className: "arabic-rsvp-intro",
+                        children: "اتركوا لنا كلمة جميلة نحتفظ بها من هذه المناسبة المميزة"
+                    }), f.jsxs("form", {
+                        className: "arabic-rsvp-form",
+                        onSubmit: o,
+                        children: [f.jsx("input", {
+                            type: "text",
+                            name: "website",
+                            tabIndex: -1,
+                            autoComplete: "off",
+                            value: e.website,
+                            onChange: a => t({
+                                ...e,
+                                website: a.target.value
+                            }),
+                            className: "arabic-rsvp-honeypot",
+                            "aria-hidden": "true"
+                        }), f.jsxs("label", {
+                            className: "arabic-rsvp-field",
+                            children: [f.jsx("span", {
+                                children: "الاسم"
+                            }), f.jsx("input", {
+                                type: "text",
+                                name: "full_name",
+                                required: !0,
+                                autoComplete: "name",
+                                value: e.full_name,
+                                onChange: a => t({
+                                    ...e,
+                                    full_name: a.target.value
+                                }),
+                                placeholder: "اكتبوا الاسم هنا"
+                            })]
+                        }), f.jsxs("label", {
+                            className: "arabic-rsvp-field",
+                            children: [f.jsx("span", {
+                                children: "الرسالة"
+                            }), f.jsx("textarea", {
+                                name: "message",
+                                required: !0,
+                                rows: 5,
+                                value: e.message,
+                                onChange: a => t({
+                                    ...e,
+                                    message: a.target.value
+                                }),
+                                placeholder: "اكتبوا رسالتكم هنا"
+                            })]
+                        }), f.jsx("button", {
+                            type: "submit",
+                            className: "arabic-rsvp-submit",
+                            disabled: s.isPending,
+                            children: s.isPending ? "جارٍ الإرسال..." : "إرسال الرسالة"
+                        })]
+                    })]
+                })
+            })
+        })
+    },
+    Ow = "./assets/audio/intro-music-CzqJOUtA.mp3",
     MV = ({
         startPlaying: e = !1
     }) => {
@@ -33009,7 +33127,7 @@ const FV = () => {
                 id: "new-chapter-message",
                 text: "ندعوكم لتشهدوا بداية فصلٍ جديدٍ من حياتنا",
                 long: !0
-            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {}), f.jsx(FinalVerseSection, {}), f.jsx(PreInvitationQuoteSection, {}), f.jsx(FinalDateCardSection, {}), f.jsx(FinalLoveQuoteSection, {})]
+            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {}), f.jsx(FinalVerseSection, {}), f.jsx(PreInvitationQuoteSection, {}), f.jsx(FinalDateCardSection, {}), f.jsx(FinalLoveQuoteSection, {}), f.jsx(ArabicRsvpSection, {})]
         })
     },
     mh = "admin_session_token";

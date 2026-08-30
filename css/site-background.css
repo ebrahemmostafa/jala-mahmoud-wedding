@@ -37,7 +37,7 @@
 /* Keep the adults-only note attached to the location details without adding a solid card. */
 .adults-only-note {
     width: min(100%, 38rem);
-    margin: 0 auto clamp(2.5rem, 8vw, 3.5rem);
+    margin: clamp(8rem, 28vw, 14rem) auto clamp(2.5rem, 8vw, 3.5rem);
     color: #5C2018;
     text-align: center;
 }
@@ -269,4 +269,118 @@
     display: block;
     width: min(88vw, 30rem);
     height: auto;
+}
+
+/* End the invitation with a simple Arabic message form. */
+.arabic-rsvp-page {
+    color: #5C2018;
+}
+
+.arabic-rsvp-card {
+    width: min(100%, 34rem);
+    padding: clamp(2rem, 7vw, 3rem);
+    border: 1px solid rgba(92, 32, 24, 0.22);
+    border-radius: 1.5rem;
+    background-color: rgba(250, 248, 245, 0.66);
+    box-shadow: 0 1.25rem 3.5rem rgba(92, 32, 24, 0.1);
+    font-family: "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
+    text-align: right;
+    backdrop-filter: blur(3px);
+}
+
+.arabic-rsvp-title,
+.arabic-rsvp-success h2 {
+    margin: 0;
+    font-family: inherit;
+    font-size: clamp(2.25rem, 9vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.arabic-rsvp-intro,
+.arabic-rsvp-success p {
+    margin: 0.75rem auto 2rem;
+    font-size: clamp(1.1rem, 4.5vw, 1.4rem);
+    line-height: 1.8;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.arabic-rsvp-form {
+    position: relative;
+    display: grid;
+    gap: 1.35rem;
+}
+
+.arabic-rsvp-field {
+    display: grid;
+    gap: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.arabic-rsvp-field input,
+.arabic-rsvp-field textarea {
+    width: 100%;
+    border: 1px solid rgba(92, 32, 24, 0.25);
+    border-radius: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 0.9rem 1rem;
+    color: #5C2018;
+    font: 400 1.15rem/1.7 "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
+    outline: none;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.arabic-rsvp-field textarea {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+.arabic-rsvp-field input::placeholder,
+.arabic-rsvp-field textarea::placeholder {
+    color: rgba(92, 32, 24, 0.48);
+}
+
+.arabic-rsvp-field input:focus,
+.arabic-rsvp-field textarea:focus {
+    border-color: #5C2018;
+    box-shadow: 0 0 0 3px rgba(92, 32, 24, 0.1);
+}
+
+.arabic-rsvp-submit {
+    width: 100%;
+    border-radius: 999px;
+    background-color: #5C2018;
+    padding: 0.9rem 1.5rem;
+    color: #FAF8F5;
+    font: 700 1.2rem/1.5 "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
+    transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.arabic-rsvp-submit:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+.arabic-rsvp-submit:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+.arabic-rsvp-honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.arabic-rsvp-success {
+    padding: clamp(2rem, 12vw, 5rem) 0;
+    text-align: center;
+}
+
+.arabic-rsvp-success p {
+    margin-bottom: 0;
 }
