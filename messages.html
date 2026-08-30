@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسائل الأحباب | عز وجالا</title>
+    <meta name="description" content="رسائل ضيوف حفل زفاف عز وجالا">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="assets/images/chatgpt-image-reference.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/messages.css?v=2">
+</head>
+<body>
+    <main class="messages-page">
+        <section class="messages-shell" aria-labelledby="messages-title">
+            <header class="messages-header">
+                <div>
+                    <p class="eyebrow">عز وجالا</p>
+                    <h1 id="messages-title">رسائل الأحباب</h1>
+                    <p id="messages-count" class="messages-count">جارٍ تحميل الرسائل...</p>
+                </div>
+                <div class="header-actions">
+                    <button id="refresh-button" class="secondary-button" type="button">تحديث</button>
+                </div>
+            </header>
+
+            <div id="loading-state" class="state-card" role="status">جارٍ تحميل الرسائل...</div>
+            <div id="error-state" class="state-card error-state" role="alert" hidden>
+                <p>تعذر تحميل الرسائل.</p>
+                <button id="retry-button" type="button">إعادة المحاولة</button>
+            </div>
+            <div id="empty-state" class="state-card" hidden>
+                لم تصل رسائل بعد.
+            </div>
+            <div id="messages-list" class="messages-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <script src="js/messages.js?v=2" defer></script>
+</body>
+</html>

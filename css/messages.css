@@ -1,0 +1,204 @@
+:root {
+    color-scheme: light;
+    font-family: "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
+    background: #ead1a5;
+    color: #5c2018;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #ead1a5;
+}
+
+button {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.messages-page {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+    padding: clamp(1.25rem, 4vw, 3rem);
+}
+
+.messages-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background-image:
+        linear-gradient(rgba(250, 244, 232, 0.3), rgba(250, 244, 232, 0.3)),
+        url("../assets/images/wedding-site-background.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.messages-page::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(250, 248, 245, 0.14), rgba(250, 248, 245, 0.38));
+    pointer-events: none;
+}
+
+.messages-header,
+.message-card,
+.state-card {
+    border: 1px solid rgba(92, 32, 24, 0.2);
+    background: rgba(250, 248, 245, 0.74);
+    box-shadow: 0 1.25rem 3.5rem rgba(92, 32, 24, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.eyebrow {
+    margin: 0 0 0.35rem;
+    color: rgba(92, 32, 24, 0.68);
+    font-size: 1rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2.35rem, 9vw, 4rem);
+    line-height: 1.2;
+}
+
+.error-state button {
+    border: 0;
+    border-radius: 999px;
+    background: #5c2018;
+    padding: 0.8rem 1.4rem;
+    color: #faf8f5;
+    font-weight: 700;
+}
+
+.header-actions button:disabled {
+    cursor: wait;
+    opacity: 0.6;
+}
+
+.messages-shell {
+    width: min(100%, 72rem);
+    margin: 0 auto;
+}
+
+.messages-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: clamp(1.35rem, 4vw, 2rem);
+    border-radius: 1.5rem;
+}
+
+.messages-header h1 {
+    font-size: clamp(2rem, 7vw, 3.25rem);
+}
+
+.messages-count {
+    margin: 0.35rem 0 0;
+    color: rgba(92, 32, 24, 0.72);
+    font-size: 1.05rem;
+}
+
+.header-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.header-actions button {
+    border-radius: 999px;
+    padding: 0.65rem 1rem;
+    color: #5c2018;
+}
+
+.secondary-button {
+    border: 1px solid #5c2018;
+    background: rgba(250, 248, 245, 0.72);
+}
+
+.messages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    gap: 1rem;
+}
+
+.message-card {
+    display: flex;
+    min-height: 14rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(1.4rem, 4vw, 2rem);
+    border-radius: 1.25rem;
+}
+
+.message-text {
+    margin: 0;
+    font-size: clamp(1.2rem, 4.2vw, 1.45rem);
+    line-height: 1.9;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.message-meta {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(92, 32, 24, 0.14);
+}
+
+.message-name {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.message-date {
+    color: rgba(92, 32, 24, 0.6);
+    font-size: 0.88rem;
+    white-space: nowrap;
+}
+
+.state-card {
+    padding: 2.5rem 1.25rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.error-state p {
+    margin: 0 0 1rem;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 42rem) {
+    .messages-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .header-actions button {
+        flex: 1;
+    }
+}
