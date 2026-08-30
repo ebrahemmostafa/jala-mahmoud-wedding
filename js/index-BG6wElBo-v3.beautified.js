@@ -23330,7 +23330,7 @@ const k5 = ({
         id: "post-dress-opening",
         className: "invitation-page post-dress-opening-page flex flex-col items-center justify-start px-8",
         children: f.jsx(W.img, {
-            src: "./assets/images/bismillah-calligraphy.svg",
+            src: "./assets/images/bismillah-calligraphy.svg?v=burgundy-2",
             alt: "بسم الله الرحمن الرحيم",
             initial: {
                 opacity: 0,
@@ -23373,6 +23373,30 @@ const k5 = ({
             lang: "ar",
             dir: "rtl",
             children: e.text
+        })
+    }),
+    FinalReviewSection = () => f.jsx("section", {
+        id: "final-review",
+        className: "invitation-page final-review-page flex items-center justify-center",
+        children: f.jsx(W.img, {
+            src: "./assets/images/review-jala.svg?v=1",
+            alt: "محمد وجالا — بارك الله لكما وبارك عليكما وجمع بينكما في خير",
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "final-review-art"
         })
     }),
     F5 = "./assets/images/gift-icon-BssCdzah.png",
@@ -32719,7 +32743,7 @@ const FV = () => {
                 id: "new-chapter-message",
                 text: "ندعوكم لتشهدوا بداية فصلٍ جديدٍ من حياتنا",
                 long: !0
-            })]
+            }), f.jsx(FinalReviewSection, {})]
         })
     },
     mh = "admin_session_token";

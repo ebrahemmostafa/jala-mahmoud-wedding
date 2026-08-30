@@ -59,7 +59,7 @@
     display: block;
     width: min(82vw, 28rem);
     height: auto;
-    margin-top: clamp(1rem, 5vh, 3rem);
+    margin-top: clamp(5rem, 14vh, 8rem);
 }
 
 /* Give each Arabic sentence its own spacious, readable full-screen page. */
@@ -78,4 +78,17 @@
 .arabic-message-page .arabic-message-text-long {
     max-width: 44rem;
     font-size: clamp(2rem, 7.5vw, 4.5rem);
+}
+
+/* Close the invitation with the supplied names and blessing artwork. */
+.site-background > .final-review-page {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #fff !important;
+}
+
+.final-review-page .final-review-art {
+    display: block;
+    width: min(100%, 24.8125rem);
+    height: auto;
 }
