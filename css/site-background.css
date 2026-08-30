@@ -59,7 +59,7 @@
     display: block;
     width: min(82vw, 28rem);
     height: auto;
-    margin-top: clamp(12rem, 32vh, 20rem);
+    margin-top: clamp(28rem, 70vh, 46rem);
 }
 
 /* Give each Arabic sentence its own spacious, readable full-screen page. */
