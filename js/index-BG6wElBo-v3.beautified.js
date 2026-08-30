@@ -23547,8 +23547,8 @@ const k5 = ({
         id: "final-love-quote",
         className: "invitation-page final-love-quote-page flex items-center justify-center",
         children: f.jsx(W.img, {
-            src: "./assets/images/final-love-quote-vector.svg?v=1",
-            alt: "وانعقد القلب بالقلب، وابتدت أجمل حكاية، عمرًا معقودًا بالحب والسعادة",
+            src: "./assets/images/final-love-quote-vector.svg?v=2",
+            alt: "وأنعقد العقد بين قلبي وقلبه، وابتدت أجمل حكاية، عمرًا معقودًا بالحب والسعادة",
             initial: {
                 opacity: 0,
                 y: 24
