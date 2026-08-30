@@ -32877,7 +32877,7 @@ const ArabicRsvpSection = () => {
             })
         })
     },
-    Ow = "./assets/audio/intro-music-CzqJOUtA.mp3",
+    Ow = "./assets/audio/wedding-music-jala.m4a",
     MV = ({
         startPlaying: e = !1
     }) => {
