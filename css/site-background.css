@@ -54,12 +54,12 @@
     gap: clamp(2rem, 8vw, 3rem);
 }
 
-/* Leave room for the rest of the new page while opening with the supplied artwork. */
+/* Give the Bismillah page a generous pause after the Dress Code section. */
 .post-dress-opening-page .post-dress-opening-art {
     display: block;
     width: min(82vw, 28rem);
     height: auto;
-    margin-top: clamp(5rem, 14vh, 8rem);
+    margin-top: clamp(12rem, 32vh, 20rem);
 }
 
 /* Give each Arabic sentence its own spacious, readable full-screen page. */
