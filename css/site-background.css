@@ -112,3 +112,10 @@
     width: min(74vw, 19rem);
     height: auto;
 }
+
+/* Preserve the supplied Quranic calligraphy, diacritics, and sweeping strokes. */
+.final-verse-page .final-verse-art {
+    display: block;
+    width: min(92vw, 45rem);
+    height: auto;
+}

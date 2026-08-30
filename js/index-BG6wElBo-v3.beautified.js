@@ -23471,6 +23471,30 @@ const k5 = ({
             className: "final-date-art"
         })
     }),
+    FinalVerseSection = () => f.jsx("section", {
+        id: "final-verse",
+        className: "invitation-page final-verse-page flex items-center justify-center",
+        children: f.jsx(W.img, {
+            src: "./assets/images/final-verse-vector.svg?v=1",
+            alt: "بسم الله الرحمن الرحيم — ومن آياته أن خلق لكم من أنفسكم أزواجًا لتسكنوا إليها وجعل بينكم مودة ورحمة إن في ذلك لآيات لقوم يتفكرون — وخلقناكم أزواجًا",
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "final-verse-art"
+        })
+    }),
     F5 = "./assets/images/gift-icon-BssCdzah.png",
     V5 = () => {
         const {
@@ -32815,7 +32839,7 @@ const FV = () => {
                 id: "new-chapter-message",
                 text: "ندعوكم لتشهدوا بداية فصلٍ جديدٍ من حياتنا",
                 long: !0
-            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {})]
+            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {}), f.jsx(FinalVerseSection, {})]
         })
     },
     mh = "admin_session_token";
