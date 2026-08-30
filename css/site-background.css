@@ -126,3 +126,10 @@
     width: min(70vw, 17.5rem);
     height: auto;
 }
+
+/* Preserve the three-line love quote and its long calligraphic swashes. */
+.final-love-quote-page .final-love-quote-art {
+    display: block;
+    width: min(88vw, 30rem);
+    height: auto;
+}
