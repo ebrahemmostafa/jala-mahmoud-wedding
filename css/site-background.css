@@ -102,7 +102,7 @@
 /* Finish with the supplied interlocking-rings illustration. */
 .final-rings-page .final-rings-art {
     display: block;
-    width: min(66vw, 26rem);
+    width: min(48vw, 18rem);
     height: auto;
 }
 
