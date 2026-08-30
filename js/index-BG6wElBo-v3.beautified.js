@@ -23495,6 +23495,30 @@ const k5 = ({
             className: "final-verse-art"
         })
     }),
+    PreInvitationQuoteSection = () => f.jsx("section", {
+        id: "pre-invitation-quote",
+        className: "invitation-page pre-invitation-quote-page flex items-center justify-center",
+        children: f.jsx(W.img, {
+            src: "./assets/images/pre-invitation-quote-vector.svg?v=1",
+            alt: "سبحان من جمع القلوب بفضله، وعلى رحاب الود عش دارها، طاب اللقاء وزاد تشريفكم، في ليلة قد أشرقت أنوارها",
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "pre-invitation-quote-art"
+        })
+    }),
     FinalDateCardSection = () => f.jsx("section", {
         id: "final-date-card",
         className: "invitation-page final-date-card-page flex items-center justify-center",
@@ -32887,7 +32911,7 @@ const FV = () => {
                 id: "new-chapter-message",
                 text: "ندعوكم لتشهدوا بداية فصلٍ جديدٍ من حياتنا",
                 long: !0
-            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {}), f.jsx(FinalVerseSection, {}), f.jsx(FinalDateCardSection, {}), f.jsx(FinalLoveQuoteSection, {})]
+            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {}), f.jsx(FinalVerseSection, {}), f.jsx(PreInvitationQuoteSection, {}), f.jsx(FinalDateCardSection, {}), f.jsx(FinalLoveQuoteSection, {})]
         })
     },
     mh = "admin_session_token";

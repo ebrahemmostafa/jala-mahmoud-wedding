@@ -120,6 +120,13 @@
     height: auto;
 }
 
+/* Place the supplied poem immediately before the invitation date card. */
+.pre-invitation-quote-page .pre-invitation-quote-art {
+    display: block;
+    width: min(88vw, 32rem);
+    height: auto;
+}
+
 /* Keep the final invitation card crisp, centered, and readable on mobile. */
 .final-date-card-page .final-date-card-art {
     display: block;
