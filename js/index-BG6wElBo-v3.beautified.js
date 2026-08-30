@@ -22684,6 +22684,42 @@ const k5 = ({
                 transition: {
                     duration: .8,
                     ease: "easeOut",
+                    delay: .8
+                },
+                viewport: {
+                    once: !0
+                },
+                className: "adults-only-note",
+                children: f.jsxs("div", {
+                    className: "adults-only-note-inner",
+                    children: [f.jsxs("p", {
+                        className: "adults-only-note-en",
+                        children: ["Please note that our celebration will be an ", f.jsx("span", {
+                            className: "adults-only-note-emphasis",
+                            children: "adults-only celebration"
+                        }), ". We kindly ask that you join us without children. We look forward to celebrating this special day with you. 🤍"]
+                    }), f.jsxs("p", {
+                        className: "adults-only-note-ar",
+                        dir: "rtl",
+                        lang: "ar",
+                        children: ["نود التنويه بأن المناسبة ستكون ", f.jsx("span", {
+                            className: "adults-only-note-highlight-ar",
+                            children: "للكبار فقط"
+                        }), "، ونرجو التكرم بالحضور بدون أطفال. يسعدنا مشاركتكم لنا هذه المناسبة المميزة. 🤍"]
+                    })]
+                })
+            }), f.jsx(W.div, {
+                initial: {
+                    opacity: 0,
+                    y: 30
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: .8,
+                    ease: "easeOut",
                     delay: 1
                 },
                 viewport: {
@@ -23326,6 +23362,68 @@ const k5 = ({
             })]
         })
     },
+    JazzMomentSection = () => f.jsx("section", {
+        id: "jazz-moment",
+        className: "invitation-page jazz-moment-page flex items-center justify-center px-8",
+        children: f.jsxs(W.div, {
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "jazz-moment-card",
+            children: [f.jsx("p", {
+                className: "jazz-moment-kicker",
+                children: "The most beautiful moment in life"
+            }), f.jsx("img", {
+                src: "./assets/images/jazz-wordmark.png?v=1",
+                alt: "Jazz",
+                className: "jazz-moment-wordmark"
+            }), f.jsxs("div", {
+                className: "jazz-moment-names",
+                children: [f.jsx("span", {
+                    children: "Jala"
+                }), f.jsx("span", {
+                    className: "jazz-moment-ampersand",
+                    children: "&"
+                }), f.jsx("span", {
+                    children: "Ezz"
+                })]
+            }), f.jsx("p", {
+                className: "jazz-moment-month",
+                children: "OCTOBER"
+            }), f.jsxs("div", {
+                className: "jazz-moment-date-line",
+                children: [f.jsx("span", {
+                    children: "THURSDAY"
+                }), f.jsx("span", {
+                    className: "jazz-moment-date-separator",
+                    "aria-hidden": !0
+                }), f.jsx("span", {
+                    className: "jazz-moment-day",
+                    children: "1"
+                }), f.jsx("span", {
+                    className: "jazz-moment-date-separator",
+                    "aria-hidden": !0
+                }), f.jsx("span", {
+                    children: "AT 05:00 PM"
+                })]
+            }), f.jsx("p", {
+                className: "jazz-moment-year",
+                children: "2026"
+            })]
+        })
+    }),
     PostDressOpeningSection = () => f.jsx("section", {
         id: "post-dress-opening",
         className: "invitation-page post-dress-opening-page flex flex-col items-center justify-start px-8",
@@ -32904,7 +33002,7 @@ const FV = () => {
                 startPlaying: e
             }), f.jsx(k5, {
                 onComplete: n
-            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(LocationQuoteSection, {}), f.jsx($5, {}), f.jsx(PostDressOpeningSection, {}), f.jsx(ArabicMessageSection, {
+            }), f.jsx(N5, {}), f.jsx(FairytaleQuoteSection, {}), f.jsx(I5, {}), f.jsx(O5, {}), f.jsx(LocationQuoteSection, {}), f.jsx($5, {}), f.jsx(JazzMomentSection, {}), f.jsx(PostDressOpeningSection, {}), f.jsx(ArabicMessageSection, {
                 id: "gratitude-message",
                 text: "بكل الحب والامتنان،"
             }), f.jsx(ArabicMessageSection, {

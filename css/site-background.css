@@ -34,6 +34,50 @@
     padding-bottom: clamp(5rem, 16vw, 7rem) !important;
 }
 
+/* Keep the adults-only note attached to the location details without adding a solid card. */
+.adults-only-note {
+    width: min(100%, 38rem);
+    margin: 0 auto clamp(2.5rem, 8vw, 3.5rem);
+    color: #5C2018;
+    text-align: center;
+}
+
+.adults-only-note-inner {
+    padding: clamp(1.15rem, 4vw, 1.55rem) 0;
+    border-top: 1px solid rgba(92, 32, 24, 0.34);
+    border-bottom: 1px solid rgba(92, 32, 24, 0.34);
+}
+
+.adults-only-note-en,
+.adults-only-note-ar {
+    margin: 0;
+    color: inherit;
+    line-height: 1.75;
+}
+
+.adults-only-note-en {
+    font-family: var(--font-body);
+    font-size: clamp(0.88rem, 3.2vw, 1.05rem);
+    letter-spacing: 0.01em;
+}
+
+.adults-only-note-ar {
+    margin-top: 0.85rem;
+    font-family: "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
+    font-size: clamp(1.05rem, 4vw, 1.32rem);
+    text-wrap: balance;
+}
+
+.adults-only-note-emphasis {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.adults-only-note-highlight-ar {
+    color: #B3261E;
+    font-weight: 700;
+}
+
 /* Each main invitation message occupies its own scrollable screen. */
 .site-background > .invitation-page {
     box-sizing: border-box;
@@ -60,6 +104,91 @@
     width: min(82vw, 28rem);
     height: auto;
     margin-top: clamp(28rem, 70vh, 46rem);
+}
+
+/* Add the Jazz details as a transparent, site-colored page after the Dress Code. */
+.jazz-moment-page .jazz-moment-card {
+    width: min(88vw, 27rem);
+    color: #5C2018;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.jazz-moment-page .jazz-moment-kicker {
+    margin: 0 0 clamp(2.3rem, 7vw, 3.2rem);
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 4.2vw, 1.35rem);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+}
+
+.jazz-moment-page .jazz-moment-wordmark {
+    display: block;
+    width: min(58vw, 15rem);
+    height: auto;
+    margin-bottom: clamp(4rem, 13vw, 5.25rem);
+}
+
+.jazz-moment-page .jazz-moment-names {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: clamp(1.1rem, 6vw, 2.3rem);
+    margin-bottom: clamp(3rem, 9vw, 4rem);
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 8vw, 3.4rem);
+    line-height: 1;
+}
+
+.jazz-moment-page .jazz-moment-ampersand {
+    font-family: var(--font-body);
+    font-size: clamp(1.2rem, 4.5vw, 1.8rem);
+}
+
+.jazz-moment-page .jazz-moment-month,
+.jazz-moment-page .jazz-moment-date-line,
+.jazz-moment-page .jazz-moment-year {
+    margin: 0;
+    font-family: var(--font-body);
+    line-height: 1.2;
+}
+
+.jazz-moment-page .jazz-moment-month {
+    margin-bottom: 0.65rem;
+    font-size: clamp(0.72rem, 2.6vw, 0.9rem);
+    font-weight: 600;
+}
+
+.jazz-moment-page .jazz-moment-date-line {
+    display: grid;
+    grid-template-columns: minmax(5.8rem, 1fr) auto auto auto minmax(5.8rem, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: clamp(0.75rem, 3vw, 1.05rem);
+    font-size: clamp(0.78rem, 2.8vw, 0.95rem);
+    text-transform: uppercase;
+}
+
+.jazz-moment-page .jazz-moment-date-separator {
+    width: 1px;
+    height: clamp(2.4rem, 9vw, 3rem);
+    background-color: currentColor;
+    opacity: 0.7;
+}
+
+.jazz-moment-page .jazz-moment-day {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 10vw, 3.35rem);
+    line-height: 0.9;
+}
+
+.jazz-moment-page .jazz-moment-year {
+    margin-top: 0.65rem;
+    font-size: clamp(1.1rem, 4.5vw, 1.45rem);
 }
 
 /* Give each Arabic sentence its own spacious, readable full-screen page. */
