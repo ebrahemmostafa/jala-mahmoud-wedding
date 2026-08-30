@@ -91,3 +91,10 @@
     width: min(100%, 24.8125rem);
     height: auto;
 }
+
+/* Preserve the reference calligraphy and its long sweeping letterforms. */
+.final-blessing-page .final-blessing-art {
+    display: block;
+    width: min(92vw, 44.0625rem);
+    height: auto;
+}
