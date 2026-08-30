@@ -119,3 +119,10 @@
     width: min(92vw, 45rem);
     height: auto;
 }
+
+/* Keep the final invitation card crisp, centered, and readable on mobile. */
+.final-date-card-page .final-date-card-art {
+    display: block;
+    width: min(70vw, 17.5rem);
+    height: auto;
+}

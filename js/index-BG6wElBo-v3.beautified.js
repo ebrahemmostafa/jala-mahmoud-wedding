@@ -23495,6 +23495,30 @@ const k5 = ({
             className: "final-verse-art"
         })
     }),
+    FinalDateCardSection = () => f.jsx("section", {
+        id: "final-date-card",
+        className: "invitation-page final-date-card-page flex items-center justify-center",
+        children: f.jsx(W.img, {
+            src: "./assets/images/final-date2-vector.svg?v=1",
+            alt: "دعوة عقد قران جالا وعز — الخميس 1 أكتوبر 2026 الساعة الخامسة مساءً",
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "final-date-card-art"
+        })
+    }),
     F5 = "./assets/images/gift-icon-BssCdzah.png",
     V5 = () => {
         const {
@@ -32839,7 +32863,7 @@ const FV = () => {
                 id: "new-chapter-message",
                 text: "ندعوكم لتشهدوا بداية فصلٍ جديدٍ من حياتنا",
                 long: !0
-            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {}), f.jsx(FinalVerseSection, {})]
+            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {}), f.jsx(FinalVerseSection, {}), f.jsx(FinalDateCardSection, {})]
         })
     },
     mh = "admin_session_token";
