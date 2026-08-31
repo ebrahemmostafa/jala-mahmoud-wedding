@@ -23619,54 +23619,130 @@ const k5 = ({
     }),
     FinalDateCardSection = () => f.jsx("section", {
         id: "final-date-card",
-        className: "invitation-page final-date-card-page flex flex-col items-center justify-center",
-        children: f.jsxs(f.Fragment, {
-            children: [f.jsx(W.img, {
-                src: "./assets/images/final-date2-vector.svg?v=1",
-                alt: "دعوة عقد قران جالا وعز — الخميس 1 أكتوبر 2026 الساعة الخامسة مساءً",
-                initial: {
-                    opacity: 0,
-                    y: 24
-                },
-                whileInView: {
-                    opacity: 1,
-                    y: 0
-                },
-                transition: {
-                    duration: .9,
-                    ease: "easeOut"
-                },
-                viewport: {
-                    once: !0
-                },
-                className: "final-date-card-art"
-            }), f.jsxs(W.div, {
-                initial: {
-                    opacity: 0,
-                    y: 24
-                },
-                whileInView: {
-                    opacity: 1,
-                    y: 0
-                },
-                transition: {
-                    duration: .9,
-                    ease: "easeOut",
-                    delay: .15
-                },
-                viewport: {
-                    once: !0
-                },
-                className: "final-date-card-location",
-                lang: "ar",
-                dir: "rtl",
-                children: [f.jsx("p", {
-                    className: "final-date-card-venue",
-                    children: "قاعة أناليا"
-                }), f.jsx("p", {
-                    className: "final-date-card-address",
-                    children: "الجولف، مدينة نصر، محافظة القاهرة"
+        className: "invitation-page final-date-card-page flex items-center justify-center",
+        children: f.jsx(W.img, {
+            src: "./assets/images/final-date2-vector.svg?v=1",
+            alt: "دعوة عقد قران جالا وعز — الخميس 1 أكتوبر 2026 الساعة الخامسة مساءً",
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "final-date-card-art"
+        })
+    }),
+    CalendarDetailIcon = () => f.jsxs("svg", {
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "currentColor",
+        strokeWidth: 1.65,
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        "aria-hidden": !0,
+        children: [f.jsx("rect", {
+            x: 3,
+            y: 5,
+            width: 18,
+            height: 16,
+            rx: 2
+        }), f.jsx("path", {
+            d: "M16 3v4M8 3v4M3 9h18M7 13h.01M12 13h.01M17 13h.01M7 17h.01M12 17h.01M17 17h.01"
+        })]
+    }),
+    LocationDetailIcon = () => f.jsxs("svg", {
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "currentColor",
+        strokeWidth: 1.65,
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        "aria-hidden": !0,
+        children: [f.jsx("path", {
+            d: "M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+        }), f.jsx("circle", {
+            cx: 12,
+            cy: 10,
+            r: 2.5
+        })]
+    }),
+    FinalEventDetailsSection = () => f.jsx("section", {
+        id: "final-event-details",
+        className: "invitation-page final-event-details-page flex items-center justify-center px-8",
+        children: f.jsxs(W.div, {
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            whileInView: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .9,
+                ease: "easeOut"
+            },
+            viewport: {
+                once: !0
+            },
+            className: "final-event-details-design",
+            lang: "ar",
+            dir: "rtl",
+            children: [f.jsx("p", {
+                className: "final-event-details-intro",
+                children: "وذلك بمشيئة الله تعالى"
+            }), f.jsxs("div", {
+                className: "final-event-details-list",
+                children: [f.jsxs("div", {
+                    className: "final-event-detail-row",
+                    children: [f.jsxs("div", {
+                        className: "final-event-detail-copy",
+                        children: [f.jsx("span", {
+                            className: "final-event-detail-label",
+                            children: "الوقت"
+                        }), f.jsx("p", {
+                            className: "final-event-detail-value final-event-detail-time",
+                            children: "من 5:00 مساءً إلى 7:00 مساءً"
+                        })]
+                    }), f.jsx("span", {
+                        className: "final-event-detail-icon",
+                        children: f.jsx(CalendarDetailIcon, {})
+                    })]
+                }), f.jsxs("a", {
+                    className: "final-event-detail-row final-event-location-link",
+                    href: "https://maps.app.goo.gl/k3E5FLAJQP7pVmHaA",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    "aria-label": "فتح موقع نادي المصانع الحربيه على الخريطة",
+                    children: [f.jsxs("div", {
+                        className: "final-event-detail-copy",
+                        children: [f.jsx("span", {
+                            className: "final-event-detail-label",
+                            children: "الموقع"
+                        }), f.jsx("p", {
+                            className: "final-event-detail-value final-event-detail-address",
+                            children: "نادي المصانع الحربيه - اول شارع الطيران - صلاح سالم - مدينه نصر"
+                        }), f.jsx("span", {
+                            className: "final-event-map-cta",
+                            children: "فتح الموقع على الخريطة"
+                        })]
+                    }), f.jsx("span", {
+                        className: "final-event-detail-icon",
+                        children: f.jsx(LocationDetailIcon, {})
+                    })]
                 })]
+            }), f.jsx("p", {
+                className: "final-event-details-closing",
+                children: "وبحضوركم تكتمل لنا الفرحة والسرور"
             })]
         })
     }),
@@ -33164,7 +33240,7 @@ const FV = () => {
                 id: "new-chapter-message",
                 text: "ندعوكم لتشهدوا بداية فصلٍ جديدٍ من حياتنا",
                 long: !0
-            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {}), f.jsx(FinalVerseSection, {}), f.jsx(PreInvitationQuoteSection, {}), f.jsx(FinalDateCardSection, {}), f.jsx(FinalLoveQuoteSection, {}), f.jsx(ArabicRsvpSection, {})]
+            }), f.jsx(FinalReviewSection, {}), f.jsx(FinalBlessingSection, {}), f.jsx(FinalRingsSection, {}), f.jsx(FinalDateSection, {}), f.jsx(FinalVerseSection, {}), f.jsx(PreInvitationQuoteSection, {}), f.jsx(FinalDateCardSection, {}), f.jsx(FinalEventDetailsSection, {}), f.jsx(FinalLoveQuoteSection, {}), f.jsx(ArabicRsvpSection, {})]
         })
     },
     mh = "admin_session_token";

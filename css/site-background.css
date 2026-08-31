@@ -258,25 +258,23 @@
 }
 
 /* Keep the final invitation card crisp, centered, and readable on mobile. */
-.final-date-card-page {
-    gap: clamp(2.25rem, 8vw, 3.25rem);
-}
-
 .final-date-card-page .final-date-card-art {
     display: block;
     width: min(70vw, 17.5rem);
     height: auto;
 }
 
-.final-date-card-location {
-    width: min(88vw, 32rem);
+.final-event-details-design {
+    width: min(100%, 34rem);
     color: #5C2018;
+    background: transparent;
     font-family: "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
     text-align: center;
 }
 
-.final-date-card-venue,
-.final-date-card-address {
+.final-event-details-intro,
+.final-event-details-closing,
+.final-event-detail-value {
     margin: 0;
     color: inherit;
     font-family: inherit;
@@ -284,15 +282,113 @@
     text-wrap: balance;
 }
 
-.final-date-card-venue {
-    font-size: clamp(1.55rem, 6vw, 2.1rem);
-    line-height: 1.35;
+.final-event-details-intro {
+    margin-bottom: clamp(3rem, 11vw, 4.75rem);
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    line-height: 1.5;
 }
 
-.final-date-card-address {
-    margin-top: 0.35rem;
-    font-size: clamp(1.05rem, 4.2vw, 1.35rem);
-    line-height: 1.65;
+.final-event-details-list {
+    position: relative;
+    display: grid;
+    gap: clamp(1.75rem, 7vw, 2.75rem);
+    width: min(100%, 31rem);
+    margin-inline: auto;
+}
+
+.final-event-details-list::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: calc(clamp(3rem, 13vw, 4rem) + clamp(0.6rem, 3vw, 1rem));
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(92, 32, 24, 0.72);
+}
+
+.final-event-detail-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(3rem, 13vw, 4rem);
+    align-items: center;
+    column-gap: clamp(1.2rem, 6vw, 2rem);
+    color: inherit;
+    direction: ltr;
+    text-decoration: none;
+}
+
+.final-event-detail-copy {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    direction: rtl;
+    text-align: right;
+}
+
+.final-event-detail-icon {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    place-items: center;
+    color: inherit;
+}
+
+.final-event-detail-icon svg {
+    display: block;
+    width: clamp(1.85rem, 8vw, 2.45rem);
+    height: auto;
+}
+
+.final-event-detail-label {
+    display: block;
+    margin-bottom: 0.15rem;
+    font-size: clamp(0.85rem, 3.4vw, 1rem);
+    line-height: 1.4;
+    opacity: 0.72;
+}
+
+.final-event-detail-value {
+    font-size: clamp(1.15rem, 4.8vw, 1.5rem);
+    line-height: 1.75;
+}
+
+.final-event-detail-time {
+    direction: rtl;
+    unicode-bidi: plaintext;
+}
+
+.final-event-detail-address {
+    font-size: clamp(1.05rem, 4.4vw, 1.35rem);
+}
+
+.final-event-map-cta {
+    display: inline-block;
+    margin-top: 0.45rem;
+    border-bottom: 1px solid rgba(92, 32, 24, 0.45);
+    font-size: clamp(0.9rem, 3.6vw, 1.05rem);
+    line-height: 1.5;
+}
+
+.final-event-location-link {
+    border-radius: 0.85rem;
+    outline: none;
+    transition: color 180ms ease, background-color 180ms ease;
+}
+
+.final-event-location-link:hover,
+.final-event-location-link:focus-visible {
+    color: #7A2A20;
+    background-color: rgba(92, 32, 24, 0.045);
+}
+
+.final-event-location-link:focus-visible {
+    box-shadow: 0 0 0 3px rgba(92, 32, 24, 0.16);
+}
+
+.final-event-details-closing {
+    max-width: 30rem;
+    margin: clamp(4rem, 15vw, 6rem) auto 0;
+    font-size: clamp(2rem, 8vw, 3.35rem);
+    line-height: 1.75;
 }
 
 /* Preserve the three-line love quote and its long calligraphic swashes. */
