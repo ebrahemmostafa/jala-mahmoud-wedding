@@ -23619,26 +23619,55 @@ const k5 = ({
     }),
     FinalDateCardSection = () => f.jsx("section", {
         id: "final-date-card",
-        className: "invitation-page final-date-card-page flex items-center justify-center",
-        children: f.jsx(W.img, {
-            src: "./assets/images/final-date2-vector.svg?v=1",
-            alt: "دعوة عقد قران جالا وعز — الخميس 1 أكتوبر 2026 الساعة الخامسة مساءً",
-            initial: {
-                opacity: 0,
-                y: 24
-            },
-            whileInView: {
-                opacity: 1,
-                y: 0
-            },
-            transition: {
-                duration: .9,
-                ease: "easeOut"
-            },
-            viewport: {
-                once: !0
-            },
-            className: "final-date-card-art"
+        className: "invitation-page final-date-card-page flex flex-col items-center justify-center",
+        children: f.jsxs(f.Fragment, {
+            children: [f.jsx(W.img, {
+                src: "./assets/images/final-date2-vector.svg?v=1",
+                alt: "دعوة عقد قران جالا وعز — الخميس 1 أكتوبر 2026 الساعة الخامسة مساءً",
+                initial: {
+                    opacity: 0,
+                    y: 24
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: .9,
+                    ease: "easeOut"
+                },
+                viewport: {
+                    once: !0
+                },
+                className: "final-date-card-art"
+            }), f.jsxs(W.div, {
+                initial: {
+                    opacity: 0,
+                    y: 24
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: .9,
+                    ease: "easeOut",
+                    delay: .15
+                },
+                viewport: {
+                    once: !0
+                },
+                className: "final-date-card-location",
+                lang: "ar",
+                dir: "rtl",
+                children: [f.jsx("p", {
+                    className: "final-date-card-venue",
+                    children: "قاعة أناليا"
+                }), f.jsx("p", {
+                    className: "final-date-card-address",
+                    children: "الجولف، مدينة نصر، محافظة القاهرة"
+                })]
+            })]
         })
     }),
     FinalLoveQuoteSection = () => f.jsx("section", {
