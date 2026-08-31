@@ -23742,7 +23742,7 @@ const k5 = ({
                 })]
             }), f.jsx("p", {
                 className: "final-event-details-closing",
-                children: "وبحضوركم تكتمل لنا الفرحة والسرور"
+                children: "وبحضوركم تزيد لنا الفرحة والسرور"
             })]
         })
     }),

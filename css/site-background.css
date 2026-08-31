@@ -385,10 +385,17 @@
 }
 
 .final-event-details-closing {
-    max-width: 30rem;
+    width: max-content;
+    max-width: calc(100vw - 2rem);
     margin: clamp(4rem, 15vw, 6rem) auto 0;
-    font-size: clamp(2rem, 8vw, 3.35rem);
-    line-height: 1.75;
+    font-family: "Aref Ruqaa", "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
+    font-size: clamp(2rem, 8.5vw, 3.75rem);
+    font-weight: 400;
+    font-feature-settings: "liga" 1, "calt" 1;
+    line-height: 1.6;
+    white-space: nowrap;
+    transform: scaleX(0.96);
+    transform-origin: center;
 }
 
 /* Preserve the three-line love quote and its long calligraphic swashes. */
