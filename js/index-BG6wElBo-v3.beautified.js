@@ -23722,7 +23722,7 @@ const k5 = ({
                     href: "https://maps.app.goo.gl/k3E5FLAJQP7pVmHaA",
                     target: "_blank",
                     rel: "noopener noreferrer",
-                    "aria-label": "فتح موقع نادي المصانع الحربيه على الخريطة",
+                    "aria-label": "فتح موقع قاعة أناليا في نادي المصانع الحربيه على الخريطة",
                     children: [f.jsxs("div", {
                         className: "final-event-detail-copy",
                         children: [f.jsx("span", {
@@ -23730,7 +23730,7 @@ const k5 = ({
                             children: "الموقع"
                         }), f.jsx("p", {
                             className: "final-event-detail-value final-event-detail-address",
-                            children: "نادي المصانع الحربيه - اول شارع الطيران - صلاح سالم - مدينه نصر"
+                            children: "قاعة أناليا - نادي المصانع الحربيه - اول شارع الطيران - صلاح سالم - مدينه نصر"
                         }), f.jsx("span", {
                             className: "final-event-map-cta",
                             children: "فتح الموقع على الخريطة"
